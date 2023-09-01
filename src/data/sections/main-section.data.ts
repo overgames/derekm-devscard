@@ -9,21 +9,19 @@ const mainSectionData = {
     slug: 'profile',
     visible: true,
   },
-  image: import('@/assets/my-image.jpeg'),
-  fullName: 'Mark Freeman',
-  role: 'Senior React Developer',
+  image: import('@/assets/profile.png'),
+  fullName: 'Derek Martinez',
+  role: 'Software Developer',
   details: [
-    { label: 'Phone', value: '605 475 6961', url: 'tel:605 475 6961' },
-    { label: 'Email', value: 'mark.freeman.dev@gmail.com', url: 'mailto:mark.freeman.dev@gmail.com' },
-    { label: 'From', value: 'Warsaw, Poland' },
-    { label: 'Salary range', value: '18 000 - 25 000 PLN' },
+    { label: 'Email', value: 'helloderekm@gmail.com', url: 'mailto:helloderekm@gmail.com' },
+    { label: 'From', value: 'Orlando, FL' },
   ],
   pdfDetails: [
-    { label: 'Phone', value: '605 475 6961' },
-    { label: 'Email', value: 'mark.freeman.dev@gmail.com' },
+    { label: 'Phone', value: '505 681 0866' },
+    { label: 'Email', value: 'helloderekm@gmail.com' },
     { label: 'LinkedIn', value: '/in/mark-freeman', url: 'https://linkedin.com' },
     { label: 'GitHub', value: '/mark-freeman', url: 'https://github.com' },
-    { label: 'Website', value: 'mark-freeman-personal-website.com', url: '/', fullRow: true },
+    { label: 'Website', value: 'https://derekm.dev', url: '/', fullRow: true },
   ],
   description:
     'Lorem ipsum dolor sit amet, consectetur **adipiscing elit**. In sodales ac dui at *vestibulum*. In condimentum metus id dui tincidunt, in blandit mi [vehicula](/). Nulla lacinia, erat sit amet elementum vulputate, lectus mauris volutpat mi, vitae accumsan metus elit ut nunc. Vestibulum lacinia enim eget eros fermentum scelerisque. Proin augue leo, posuere ut imperdiet vitae, fermentum eu ipsum. Sed sed neque sagittis, posuere urna nec, commodo leo. Pellentesque posuere justo vitae massa volutpat maximus.',
@@ -31,7 +29,7 @@ const mainSectionData = {
   action: {
     label: 'Download CV',
     url: '/cv.pdf',
-    downloadedFileName: 'CV-Mark_Freeman.pdf',
+    downloadedFileName: 'CV-derekm.pdf',
   },
   links: [facebook({ url: '#' }), github({ url: '#' }), linkedin({ url: '#' }), twitter({ url: '#' })],
 } as const satisfies ReadonlyDeep<MainSection>;

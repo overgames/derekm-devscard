@@ -2,17 +2,19 @@ import type { ExperienceSection } from '@/types/sections/experience-section.type
 import type { ReadonlyDeep } from 'type-fest';
 import { facebook, github, instagram, linkedin, twitter, website } from '../helpers/links';
 import {
-  chakraUi,
-  eslint,
+  angular,
+  astro,
+  awsDocumentdb,
+  dataDog,
+  docker,
   firebase,
-  nextJs,
-  nx,
-  pnpm,
-  react,
-  reactQuery,
-  tailwindCss,
+  java,
+  k8s,
+  kafka,
+  mongoDb,
+  postgreSql,
+  springBoot,
   typescript,
-  vue,
 } from '../helpers/skills';
 
 const experienceSectionData = {
@@ -24,29 +26,31 @@ const experienceSectionData = {
   },
   jobs: [
     {
-      role: 'Senior front-end developer',
-      company: 'Google',
-      image: import('@/assets/logos/google-logo.jpg'),
-      dates: [new Date('2020-02'), null],
+      role: 'Software Developer',
+      company: 'Charter Communications',
+      image: import('@/assets/logos/charter--600.png'),
+      dates: [new Date('2022-08'), null],
       description: `
-        - In tristique vulputate augue vel egestas.
-        - Quisque ac imperdiet tortor, at lacinia ex.
-        - Duis vel ex hendrerit, commodo odio sed, aliquam enim.
-        - Ut arcu nulla, tincidunt eget arcu eget, molestie vulputate nisi.
-        - Nunc malesuada leo et est iaculis facilisis.
-        - Fusce eu urna ut magna malesuada fringilla.
+      Developed, tested, and maintained data-caching microservice applications.
+        - Implemented new features for improving functionality/performance for various components.
+        - Implemented various HTTP endpoints for communication across platform ecosystem.
+        - Upgraded core microservice components from Java 8 to Java 17.
+        - Practiced test-driven development by writing and utilizing unit tests, regression tests, and validation applications.
+        - Supported multiple deployment efforts for new releases.
+        - Practiced scrum/agile with daily standups and frequent retros.
+        - Planned and documented ongoing development efforts utilizing tools such as Chalk and Jira.
+        - Improved and refactored regression suites and common code base across multiple components.
       `,
       tagsList: {
         title: 'Technologies',
-        tags: [react(), nextJs(), typescript(), nx(), firebase()],
+        tags: [java(), springBoot(), kafka(), mongoDb(), k8s(), docker(), dataDog()],
       },
-      links: [facebook({ url: '#' }), linkedin({ url: '#' })],
     },
     {
-      role: 'React.js developer',
-      company: 'Facebook',
-      image: import('@/assets/logos/facebook-logo.png'),
-      dates: [new Date('2019-04'), new Date('2020-02')],
+      role: 'SDIT Java Developer',
+      company: 'Dish Network',
+      image: import('@/assets/logos/dish-logo.png'),
+      dates: [new Date('2021-08'), new Date('2022-08')],
       description: `
         - Aenean eget ultricies felis. Pellentesque dictum massa ut tellus eleifend, sed posuere massa mattis.
         - Ut posuere massa lacus, eleifend molestie tortor auctor vel.
@@ -55,15 +59,14 @@ const experienceSectionData = {
       `,
       tagsList: {
         title: 'Technologies',
-        tags: [react(), reactQuery(), chakraUi(), eslint()],
+        tags: [typescript(), firebase()],
       },
-      links: [website({ url: '#' }), instagram({ url: '#' })],
     },
     {
-      role: 'Junior front-end developer',
-      company: 'GitLab',
-      image: import('@/assets/logos/gitlab-logo.png'),
-      dates: [new Date('2016-09'), new Date('2019-04')],
+      role: 'Full-Stack Java Developer',
+      company: 'Revature',
+      image: import('@/assets/logos/revature-logo.png'),
+      dates: [new Date('2021-03'), new Date('2021-08')],
       description: `
         Nulla volutpat justo ante, rhoncus posuere massa egestas in:
 
@@ -74,9 +77,8 @@ const experienceSectionData = {
       `,
       tagsList: {
         title: 'Technologies',
-        tags: [vue(), tailwindCss(), pnpm()],
+        tags: [typescript(), firebase()],
       },
-      links: [twitter({ url: '#' }), github({ url: '#' })],
     },
   ],
 } as const satisfies ReadonlyDeep<ExperienceSection>;

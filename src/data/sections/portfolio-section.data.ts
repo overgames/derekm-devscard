@@ -2,19 +2,8 @@ import type { PortfolioSection } from '@/types/sections/portfolio-section.types'
 import type { ReadonlyDeep } from 'type-fest';
 import { demo, github, mockups, website } from '../helpers/links';
 import {
-  chakraUi,
-  eslint,
   firebase,
-  jest,
-  nestJs,
-  nextJs,
-  nx,
-  pnpm,
   postgreSql,
-  prettier,
-  react,
-  sass,
-  tailwindCss,
   typescript,
 } from '../helpers/skills';
 
@@ -53,7 +42,7 @@ const portfolioSectionData = {
         'In tristique vulputate augue vel egestas. Quisque ac imperdiet tortor, at lacinia ex. Duis vel ex hendrerit, commodo odio sed, aliquam enim. Ut arcu nulla, tincidunt eget arcu eget, molestie vulputate nisi. Nunc malesuada leo et est iaculis facilisis.',
       tagsList: {
         title: 'Technologies',
-        tags: [nextJs(), sass(), pnpm(), eslint(), prettier()],
+        tags: [postgreSql()],
       },
       links: [mockups({ url: '#' }), demo({ url: '#' })],
     },
@@ -75,7 +64,7 @@ const portfolioSectionData = {
         'Ut ultricies tortor at sodales aliquam. Vivamus metus ante, fringilla nec ligula in, suscipit rhoncus mauris. Praesent hendrerit velit odio, at accumsan urna faucibus convallis. Nunc at massa eget ligula volutpat dictum a sit amet libero. Vestibulum iaculis molestie maximus. In hac habitasse platea dictumst.',
       tagsList: {
         title: 'Technologies',
-        tags: [react(), tailwindCss(), nestJs(), postgreSql()],
+        tags: [postgreSql()],
       },
       links: [mockups({ url: '#' }), demo({ url: '#' })],
     },
@@ -97,7 +86,7 @@ const portfolioSectionData = {
         'Quisque id consectetur eros. In hac habitasse platea dictumst. Sed eu pulvinar orci. Mauris consequat, est in dignissim varius, neque nisl commodo mauris, id blandit risus justo eu nulla.',
       tagsList: {
         title: 'Technologies',
-        tags: [react(), chakraUi(), typescript(), nx(), pnpm()],
+        tags: [typescript()],
       },
       links: [website({ url: '#' }), github({ url: '#' })],
     },
@@ -119,7 +108,7 @@ const portfolioSectionData = {
         'Praesent eu neque tortor. Vestibulum ac magna nisl. Vivamus massa sem, feugiat in pharetra non, convallis egestas purus. Ut consequat ullamcorper sem, in euismod nibh posuere ut. ',
       tagsList: {
         title: 'Technologies',
-        tags: [typescript(), jest(), firebase()],
+        tags: [typescript(), firebase()],
       },
       links: [mockups({ url: '#' }), github({ url: '#' })],
     },

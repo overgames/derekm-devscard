@@ -7,7 +7,6 @@ import type { FavoritesSection } from './sections/favorites-section.types';
 import type { MainSection } from './sections/main-section.types';
 import type { PortfolioSection } from './sections/portfolio-section.types';
 import type { SkillsSection } from './sections/skills-section.types';
-import type { TestimonialsSection } from './sections/testimonials-section.types';
 
 export type Config = {
   /**

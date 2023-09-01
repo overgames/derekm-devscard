@@ -22,15 +22,6 @@ const { role, company, dates, description, links, tagsList, image } = Astro.prop
         <Timestamp dates={dates} />
       </div>
     </div>
-    {
-      links.length > 0 && (
-        <div class="flex flex-wrap gap-3 sm:flex-nowrap">
-          {links.map((link) => (
-            <LinkButton {...link} />
-          ))}
-        </div>
-      )
-    }
   </div>
   <Description content={description} class="mb-3" />
   <TagsList {...tagsList} />
